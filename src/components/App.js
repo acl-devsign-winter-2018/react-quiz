@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Notes from './Notes';
+import NoteMaker from './NoteMaker';
 
 export default class App extends Component {
 
@@ -21,12 +22,17 @@ export default class App extends Component {
     ]
   };
 
+  handleNewNote = (date, text) => {
+    this.setState({ date, text });
+  };
+
   render() {
     const { notes } = this.state;
 
     return (
       <div>
         <Notes notes={notes}/>
+        <NoteMaker onNote={this.handleNewNote}/>
       </div>
     );
   }

@@ -9,11 +9,9 @@ export default class Notes extends Component {
     const { note } = this.props;
     const { date, text } = note;
 
-    const parsedDate = date.toString;
-
     return (
       <li>
-        <h2>{parsedDate}</h2>
+        <h2>{date.toString()}</h2>
         <p>{text}</p>
       </li>
     );
