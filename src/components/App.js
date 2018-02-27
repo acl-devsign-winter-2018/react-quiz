@@ -23,8 +23,13 @@ export default class App extends Component {
   };
 
   render() {
+
+    const { notes } = this.state;
     return (
-      <div>Hello Notes! Implement Me!</div>
+      <div>
+        <h2>Hello Notes! Implement Me!</h2>
+        <Notes notes={notes}/>
+      </div>
 
     );
   }

@@ -1,2 +1,21 @@
 import React, { Component } from 'react';
-import Notes from './Notes';
+
+export default class Note extends Component {
+
+  render() {
+    const { date, text } = this.props;
+
+    return (
+      <div className="note">
+        <li>
+          <h3>{text}</h3>
+          <p>On {date}</p>
+        </li>
+      </div>
+    )
+
+  }
+
+
+
+}

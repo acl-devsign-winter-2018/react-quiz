@@ -4,19 +4,19 @@ This quiz is designed to test your familiarity with basic React components.
 
 ## Rules
 
-1. **Make an initial commit when you start your work**
-1. You have **25 minutes** to complete what you can.
-1. You must complete this work on your own within the allotted time
+<!-- 1. **Make an initial commit when you start your work** -->
+<!-- 1. You have **25 minutes** to complete what you can. -->
+<!-- 1. You must complete this work on your own within the allotted time
     * You **need to manage your time** to have PR and last commit before deadline (remember, you can
-    open PR and push your commits frequently).
-1. You may use normal resources that a software developer uses on the job (docs, google, your prior work)
+    open PR and push your commits frequently). -->
+<!-- 1. You may use normal resources that a software developer uses on the job (docs, google, your prior work)
 1. You may install npm packages of your choosing, though working webpack react build system is included 
-(remember to `npm i` after cloning your forked repo!)
-1. Use general best practices and common sense
+(remember to `npm i` after cloning your forked repo!) -->
+<!-- 1. Use general best practices and common sense
     * Highly recommended to implement what is needed, no more no less
     * Blind boilerplate may not be helpful and will likely create more work
     * **Focus effort on requirements of the lab**
-1. Total possible points are 50. You will be graded out of 40 points
+1. Total possible points are 50. You will be graded out of 40 points -->
 
 ## Submission requirement
 
