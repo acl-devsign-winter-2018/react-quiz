@@ -27,7 +27,7 @@ export default class App extends Component {
     return (
       <div>
         <Notes
-          notes = {notes.text}
+          notes = {notes}
         />
       </div>
     );
