@@ -22,7 +22,9 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>Hello Notes! Implement Me!</div>
+      <div>Hello Notes! Implement Me!
+        <Notes/>
+      </div>
     );
   }
 }
