@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Notes from './Notes';
 
 export default class App extends Component {
 
@@ -21,8 +22,13 @@ export default class App extends Component {
   };
 
   render() {
+    const { notes} = this.state;
+
     return (
-      <div>Hello Notes! Implement Me!</div>
+      <div>
+        <div>Hello Notes! Implement Me!</div>
+        <Notes notes={notes}/>
+      </div>
     );
   }
 }
