@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 export default class Note extends Component {
 
   render() {
-    const { date, text } = this.props.note;
+    const { date, text } = this.props.notes;
+    console.log( date, text)
+    
     return (
       <div>
         <li>

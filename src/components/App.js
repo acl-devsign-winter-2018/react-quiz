@@ -23,7 +23,7 @@ export default class App extends Component {
 
   render() {
     const { notes } = this.state;
-    
+
     return (
       <div>Hello Notes! Implement Me!
       <Notes notes={notes}/>
