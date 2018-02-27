@@ -22,12 +22,12 @@ export default class App extends Component {
   };
 
   render() {
-    const { notes} = this.state;
+    const { notes } = this.state;
 
     return (
       <div>
         <div>Hello Notes! Implement Me!</div>
-        <Notes notes={notes}/>
+        <Notes notes={this.setState}/>
       </div>
     );
   }

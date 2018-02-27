@@ -5,6 +5,7 @@ export default class Notes extends Component {
 
   render() {
     const { notes } = this.props;
+    const { date, text } = notes;
 
     return (
       <ul className="note-list">
