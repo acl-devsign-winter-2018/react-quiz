@@ -16,6 +16,4 @@ export default class Notes extends Component {
       </ul>
     )
   }
-
-
 }
