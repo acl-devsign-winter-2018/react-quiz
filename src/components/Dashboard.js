@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Note from './Note';
 import { connect } from 'react-redux';
-import addNote from './actions/notesActions';
+import { addNote } from './actions/notesActions';
 
 class Dashboard extends Component {
 
@@ -14,34 +14,35 @@ class Dashboard extends Component {
   }
 
   handleChange = ({  target  }) => {
-    this.setState({ [target.name]: target.value });;
+    this.setState({ [target.name]: target.value });
   };
   
-  // handleSubmit
-  // event.preventDefault();
-  // this.addNote({
-  //   ...this.state
-  // });;
+  handleSubmit = event => {
+    event.preventDefault();
+    console.log('note added');
+    this.props.addNote({
+      ...this.state
+    }); 
+  };
 
 
   render() {
-    const { notes, addNote } = this.props;
+    const { notes } = this.props;
 
 
     return (
       <div>
-        <form >
-          {/* onSubmit={} */}
-          <input name='text' onChange={handleAdd}> </input>
+        <form onSubmit={this.handleSubmit}>
+          <input name='text' onChange={this.handleChange}/>
+          <button type="submit">Submit </button>
         </form>
 
         <ul>
           {notes.map((note) => {
             return <Note key={note.date} {...note}/>;
-          })};
+          })}
         </ul>
 
-        <button type="submit"> </button>
       </div>
     );
   }

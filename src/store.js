@@ -1,5 +1,5 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
-import { notes } from './components/reducers/categoryReducers';
+import { notes } from './components/reducers/notesReducer';
 import thunk from 'redux-thunk';
 
 
