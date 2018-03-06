@@ -38,8 +38,9 @@ class Dashboard extends Component {
         </form>
 
         <ul>
-          {notes.map((note) => {
-            return <Note key={note.date} {...note}/>;
+          {notes.map((note, index) => {
+            
+            return <Note key={index} {...note}/>;
           })}
         </ul>
 
