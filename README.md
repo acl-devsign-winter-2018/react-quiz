@@ -31,6 +31,6 @@ Build an app that displays a list of notes. Use the following component structur
   * `Notes` - component that accepts an array of notes to display and creates a list with a `Note` component for each note
     * `Note` - component that accepts a note and displays the date and 
     text of the note.
-    * **Bonus, Not Required** `AddBook` - form for adding a new note.
+    * **Bonus, Not Required** `AddNote` - form for adding a new note.
     date should get set with `new Date()`
     
