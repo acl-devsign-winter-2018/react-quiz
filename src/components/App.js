@@ -20,9 +20,25 @@ export default class App extends Component {
     ]
   };
 
+  newNote = dateKey=> {
+    this.setState(state => ({
+      text: state.text[dateKey]
+    }));
+  };
+
   render() {
+    const { date, text } = this.state;
     return (
-      <div>Hello Notes! Implement Me!</div>
+      <div>
+        <header>
+          <h1>NotePad</h1>
+          <date 
+            date={date}/>
+        </header>
+        <main>
+          <text text={text} newNote={this.newNote}/>
+        </main>
+      </div>
     );
   }
 }
