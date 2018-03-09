@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import Note from './Note';
+import Notes from './Notes';
 
 export default class App extends Component {
 
@@ -21,8 +23,16 @@ export default class App extends Component {
   };
 
   render() {
+    const { note, notes } = this.state;
     return (
-      <div>Hello Notes! Implement Me!</div>
+      <div>
+        <Notes
+          notes = {notes}
+        />
+        <Note
+          note = {note}
+        />
+      </div>
     );
   }
 }
