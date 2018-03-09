@@ -21,8 +21,22 @@ export default class App extends Component {
   };
 
   render() {
+    const { date, text } = this.props;
     return (
-      <div>Hello Notes! Implement Me!</div>
+      <div>
+      <div><h1>Hello Notes! Implement Me!</h1></div>
+        <div>
+          <ul className="notes">
+          <Date date={date}/>
+            <li>
+              <h2>{text}</h2>
+          </li>
+            <li>
+             
+            </li>
+          </ul>
+      </div>
+      </div>
     );
   }
 }
